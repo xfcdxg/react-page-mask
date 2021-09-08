@@ -1,0 +1,20 @@
+{
+  "plugins" : [
+    [
+      "import",
+        {
+          "libraryName": "ramda",
+          "libraryDirectory": "src",
+          "camel2DashComponentName": false
+        }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env"
+    ],
+    [
+      "@babel/react"
+    ]
+  ]
+}
