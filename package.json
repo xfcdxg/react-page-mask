@@ -1,11 +1,11 @@
 {
   "name": "react-page-mask",
   "version": "1.0.1",
-  "main": "./lib/index.js",
+  "main": "./common/index.js",
   "author": "zhou",
   "files": [
     "dist",
-    "lib"
+    "common"
   ],
   "repository": {
     "type": "git",
