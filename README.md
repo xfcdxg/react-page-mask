@@ -6,7 +6,6 @@ React 页面遮罩组件，函数触发，不污染 DOM。
 ```
   $ npm install react-page-mask
   // or
-
   $ yarn add react-page-mask
 ```
 
@@ -18,7 +17,7 @@ React 页面遮罩组件，函数触发，不污染 DOM。
 
 ### 使用方式
 
-###### Mask(ReactNode, props)
+##### Mask(ReactNode, props)
 
 ```js
   const Layer = <div>content</div>
