@@ -5,7 +5,7 @@
   "author": "zhou",
   "files": [
     "dist",
-    "common"
+    "lib"
   ],
   "repository": {
     "type": "git",
