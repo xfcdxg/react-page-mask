@@ -22,6 +22,9 @@ class App extends React.Component {
   handleShowMask() {
     Mask(<div style={contentStyle}>abc</div>)
   }
+  handleShowDarknessMask() {
+    Mask(<div style={contentStyle}>abc</div>, { maskStyle: { opacity: .9 } })
+  }
   handleShowTransparentMask() {
     Mask(<div style={contentStyle}>cde</div>, { mask: false })
   }
@@ -43,6 +46,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <button onClick={ this.handleShowMask.bind(this) }>弹出遮罩</button>
+
+        <button onClick={ this.handleShowDarknessMask.bind(this) }>弹出深色遮罩</button>
 
         <button onClick={ this.handleShowTransparentMask.bind(this) }>弹出透明遮罩</button>
 
