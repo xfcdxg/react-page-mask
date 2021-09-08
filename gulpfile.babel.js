@@ -6,7 +6,7 @@ import cssMin from 'gulp-css'
 const src  = gulp.src('src/lib/**/*.js')
 const css  = gulp.src('src/lib/**/*.css')
 const dist = gulp.dest('dist')
-const lib = gulp.dest('common')
+const lib = gulp.dest('lib')
 
 // gulp.task('default', gulp.series('build', () => {}))
 
