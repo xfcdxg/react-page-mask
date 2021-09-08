@@ -1,6 +1,6 @@
 {
   "name": "react-page-mask",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./common/index.js",
   "author": "zhou",
   "files": [
