@@ -84,14 +84,14 @@ var MaskContainer = function MaskContainer(_ref) {
       _ref$containerClass = _ref.containerClass,
       containerClass = _ref$containerClass === void 0 ? '' : _ref$containerClass,
       handleContainerClose = _ref.handleContainerClose,
-      _ref$maskClick = _ref.maskClick,
-      maskClick = _ref$maskClick === void 0 ? defultMaskClick : _ref$maskClick;
+      _ref$handleClose = _ref.handleClose,
+      handleClose = _ref$handleClose === void 0 ? defultMaskClick : _ref$handleClose;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "mask-container ".concat(containerClass),
     style: (0, _merge2.default)(localMaskContainerStyle, style)
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "mask",
-    onClick: maskClosable ? (0, _compose2.default)(handleContainerClose, maskClick) : defultMaskClick,
+    onClick: maskClosable ? (0, _compose2.default)(handleContainerClose, handleClose) : defultMaskClick,
     style: !mask ? (0, _merge2.default)(localMaskStyle, maskStyle) : (0, _compose2.default)((0, _merge2.default)(localMaskStyle), (0, _merge2.default)(defaultBgColor))(maskStyle)
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "content ".concat(contentClass),

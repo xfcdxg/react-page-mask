@@ -60,13 +60,13 @@ const MaskContainer = (
     contentClass = '',        // 内容的样式类
     containerClass = '',      // 容器的样式类
     handleContainerClose,
-    maskClick = defultMaskClick, // 遮罩的点击，与关闭一起执行
+    handleClose = defultMaskClick, // 遮罩的点击，与关闭一起执行
   }
 ) =>
 (
   <div className={ `mask-container ${ containerClass }` } style={ merge(localMaskContainerStyle, style) }>
     <div className='mask'
-         onClick={ maskClosable ? compose(handleContainerClose, maskClick) : defultMaskClick }
+         onClick={ maskClosable ? compose(handleContainerClose, handleClose) : defultMaskClick }
          style={
            !mask ? merge(localMaskStyle, maskStyle)
                  : compose(merge(localMaskStyle), merge(defaultBgColor))(maskStyle)

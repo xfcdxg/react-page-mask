@@ -40,7 +40,7 @@ class App extends React.Component {
     alert('im closed')
   }
   handleShowMaskCloseWithProcess() {
-    Mask(<div style={contentStyle}>efg</div>, { maskClick: this.handleProcess })
+    Mask(<div style={contentStyle}>efg</div>, { handleClose: this.handleProcess })
   }
   render() {
     return (
@@ -53,7 +53,7 @@ class App extends React.Component {
 
         <button onClick={ this.handleShowNonCloseMask.bind(this) }>弹出不可关闭的透明遮罩</button>
 
-        <button onClick={ this.handleShowMaskCloseWithProcess.bind(this) }>弹出遮罩，关闭后处理更多</button>
+        <button onClick={ this.handleShowMaskCloseWithProcess.bind(this) }>弹出遮罩，关闭后处理逻辑</button>
       </div>
     )
   }
