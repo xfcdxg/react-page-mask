@@ -37,6 +37,13 @@ React 页面遮罩组件，函数触发，不污染 DOM。
   // 遮罩关闭时处理逻辑
   Mask(Layer, { maskClick: () => {} })
 
+  // 执行后返回关闭方法，可用于单独处理关闭
+  const handleCloseMask = Mask(...)
+
+  handleCloseMask()
+
+  // 关闭所有遮罩，多层遮罩下使用
+  Mask.closeAll()
 ```
 
 ### 可配置的Props
