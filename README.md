@@ -61,4 +61,4 @@ React 页面遮罩组件，函数触发，不污染 DOM。
 | containerClass | String | '' | 遮罩容器的样式类 |
 | handleClose | Function | | 遮罩关闭时的处理事件|
 
-[React-Page-Mask]:https://github.com/xfcdxg/react-page-mask.git
+[React-Page-Mask]:https://xfcdxg.github.io/react-page-mask/
